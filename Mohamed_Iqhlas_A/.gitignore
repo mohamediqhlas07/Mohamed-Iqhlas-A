@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pkl
+*.npy
+*.h5
+*.keras
+music_dataset/
+test_audio/
+.venv/

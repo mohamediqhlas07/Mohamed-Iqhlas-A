@@ -1,0 +1,72 @@
+import os
+
+import numpy as np
+import tensorflow as tf
+from sklearn.metrics import classification_report, f1_score, hamming_loss
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+# ---------------- CONFIG ----------------
+MODEL_PATH = "instrument_classifier_multilabel.keras"
+TEST_DIR = "spectrogram_dataset/val"
+
+IMG_SIZE = (128, 128)
+BATCH_SIZE = 16
+THRESHOLD = 0.5
+
+CLASS_NAMES = sorted(os.listdir(TEST_DIR))
+NUM_CLASSES = len(CLASS_NAMES)
+
+print("Classes:", CLASS_NAMES)
+print("Number of classes:", NUM_CLASSES)
+
+# ---------------- LOAD MODEL ----------------
+model = tf.keras.models.load_model(MODEL_PATH)
+
+# ---------------- DATA LOADER ----------------
+datagen = ImageDataGenerator(rescale=1./255)
+
+test_gen = datagen.flow_from_directory(
+    TEST_DIR,
+    target_size=IMG_SIZE,
+    batch_size=BATCH_SIZE,
+    class_mode="sparse",
+    shuffle=False
+)
+
+# ---------------- LABEL CONVERSION ----------------
+def single_to_multilabel(label, num_classes):
+    vec = np.zeros(num_classes)
+    vec[label] = 1
+    return vec
+
+y_true, y_pred = [], []
+
+for _ in range(len(test_gen)):
+    images, labels = next(test_gen)
+    preds = model.predict(images)
+
+    preds_bin = (preds >= THRESHOLD).astype(int)
+
+    for i in range(len(labels)):
+        y_true.append(single_to_multilabel(int(labels[i]), NUM_CLASSES))
+        y_pred.append(preds_bin[i])
+
+y_true = np.array(y_true)
+y_pred = np.array(y_pred)
+
+# ---------------- METRICS ----------------
+print("\n📊 TEST SET CLASSIFICATION REPORT:\n")
+print(classification_report(
+    y_true,
+    y_pred,
+    target_names=CLASS_NAMES,
+    zero_division=0
+))
+
+macro_f1 = f1_score(y_true, y_pred, average="macro")
+weighted_f1 = f1_score(y_true, y_pred, average="weighted")
+hamming = hamming_loss(y_true, y_pred)
+
+print("📌 Test Macro F1:", round(macro_f1, 4))
+print("📌 Test Weighted F1:", round(weighted_f1, 4))
+print("📌 Test Hamming Loss:", round(hamming, 4))
