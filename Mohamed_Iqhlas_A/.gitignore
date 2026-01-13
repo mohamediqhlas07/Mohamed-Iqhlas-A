@@ -6,3 +6,6 @@ music_dataset/
 *.wav
 *.npy
 *.pkl
+__pycache__/
+*.pyc
+
