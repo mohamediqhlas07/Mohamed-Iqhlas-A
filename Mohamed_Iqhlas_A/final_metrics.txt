@@ -1,0 +1,10 @@
+Final Model Evaluation Metrics
+
+Training Accuracy   : 95.17%
+Validation Accuracy : 95.14%
+Training Loss       : 0.1525
+Validation Loss     : 0.1492
+Accuracy Gap        : 0.03%
+
+Conclusion:
+The model generalizes well with minimal overfitting.
