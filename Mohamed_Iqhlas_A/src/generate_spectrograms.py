@@ -5,8 +5,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # ---------------- CONFIG ----------------
-AUDIO_DATASET_PATH = "music_dataset"   # folder with instrument folders
-OUTPUT_PATH = "spectrogram_dataset"    # output spectrogram images
+AUDIO_DATASET_PATH = "music_dataset_grouped"
+OUTPUT_PATH = "spectrogram_dataset_grouped"
+   # output spectrogram images
 SAMPLE_RATE = 22050
 DURATION = 3        # seconds
 N_MELS = 128

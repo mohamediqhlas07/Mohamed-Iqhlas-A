@@ -8,3 +8,145 @@ Accuracy Gap        : 0.03%
 
 Conclusion:
 The model generalizes well with minimal overfitting.
+
+Class: Accordion
+  Total samples: 3581
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 56
+
+Class: Acoustic_Guitar
+  Total samples: 3654
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 51
+
+Class: Banjo
+  Total samples: 2998
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 105
+
+Class: Bass_Guitar
+  Total samples: 3613
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 1
+
+Class: Clarinet
+  Total samples: 634
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 90
+
+Class: cowbell
+  Total samples: 621
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 0
+
+Class: Cymbals
+  Total samples: 208
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 116
+
+Class: Dobro
+  Total samples: 487
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 0
+
+Class: Drum_set
+  Total samples: 3648
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 0
+
+Class: Electro_Guitar
+  Total samples: 1316
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 2
+
+Class: Floor_Tom
+  Total samples: 406
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 127
+
+Class: flute
+  Total samples: 3719
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 86
+
+Class: Harmonica
+  Total samples: 131
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 9
+
+Class: Harmonium
+  Total samples: 1314
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 0
+
+Class: Hi_Hats
+  Total samples: 444
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 205
+
+Class: Horn
+  Total samples: 1258
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 0
+
+Class: Keyboard
+  Total samples: 2041
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 0
+
+Class: Mandolin
+  Total samples: 2458
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 7
+
+Class: Organ
+  Total samples: 1442
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 2
+
+Class: Piano
+  Total samples: 575
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 13
+
+Class: Saxophone
+  Total samples: 454
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 5
+
+Class: Shakers
+  Total samples: 1357
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 134
+
+Class: Tambourine
+  Total samples: 558
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 55
+
+Class: Trombone
+  Total samples: 2965
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 95
+
+Class: Trumpet
+  Total samples: 503
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 7
+
+Class: Ukulele
+  Total samples: 790
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 22
+
+Class: vibraphone
+  Total samples: 506
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 102
+
+Class: Violin
+  Total samples: 630
+  Very short clips (<1s): 0
+  Low-energy / noisy clips: 63
+
+✅ Dataset quality analysis completed.

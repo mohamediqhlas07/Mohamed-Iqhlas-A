@@ -1,0 +1,34 @@
+                 precision    recall  f1-score   support
+
+      Accordion       0.89      0.94      0.92       717
+Acoustic_Guitar       0.92      0.94      0.93       731
+          Banjo       0.93      0.98      0.95       600
+    Bass_Guitar       1.00      0.99      0.99       723
+       Clarinet       0.94      0.91      0.92       127
+        Cymbals       0.74      0.83      0.79        42
+          Dobro       0.94      0.76      0.84        98
+       Drum_set       1.00      1.00      1.00       730
+ Electro_Guitar       0.95      0.92      0.93       264
+      Floor_Tom       0.95      0.91      0.93        82
+      Harmonica       0.88      0.81      0.85        27
+      Harmonium       1.00      0.98      0.99       263
+        Hi_Hats       0.91      0.91      0.91        89
+           Horn       0.99      1.00      1.00       252
+       Keyboard       1.00      1.00      1.00       409
+       Mandolin       0.89      0.91      0.90       492
+          Organ       1.00      0.98      0.99       289
+          Piano       0.97      0.88      0.92       115
+      Saxophone       0.81      0.63      0.71        91
+        Shakers       0.99      0.99      0.99       272
+     Tambourine       0.90      0.96      0.93       112
+       Trombone       0.97      0.89      0.93       593
+        Trumpet       0.68      0.81      0.74       101
+        Ukulele       0.90      0.94      0.92       158
+         Violin       0.84      0.90      0.87       126
+        cowbell       1.00      1.00      1.00       125
+          flute       1.00      1.00      1.00       744
+     vibraphone       0.95      0.89      0.92       102
+
+       accuracy                           0.95      8474
+      macro avg       0.93      0.92      0.92      8474
+   weighted avg       0.95      0.95      0.95      8474
